@@ -11,6 +11,9 @@ nginx.conf
 robots.txt
 cloner_error_log
 
+# ignore config.js file for Flickr API token
+src/config.js
+
 # ignore log files and databases
 *.log
 *.sql
@@ -67,6 +70,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+dist
+dist-ssr
+*.local
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -132,3 +138,13 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
