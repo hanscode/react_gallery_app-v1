@@ -21,7 +21,7 @@ const SearchForm = (props) => {
     props.changeQuery(searchText.current.value);
     // Changing the path in response to the form submission.
     let path = `search/${searchText.current.value}`;
-    navigate(path, { replace:true });
+    navigate(path);
     // Reset the search field after submission.
     e.currentTarget.reset();
   };
